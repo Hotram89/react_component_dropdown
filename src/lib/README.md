@@ -14,15 +14,15 @@ From project 14 OpenClassrooms, react app developer
 
 ## Installation
 
-`npm i dropdown_mdournel`  
+`npm i mdournel-dropdown`  
 or  
-`yarn add dropdown_mdournel`
+`yarn add mdournel-dropdown`
 
 ## Props
 
 | Label       |   Type   | Required | Default |
 | :---------- | :------: | :------: | :-----: |
-| cName       |  string  |   Yes    |   N/A   |
+| className   |  string  |   Yes    |   N/A   |
 | options     |  array   |   Yes    |   N/A   |
 | select      | fonction |   Yes    |
 | placeholder |  string  |   Yes    |   N/A   |

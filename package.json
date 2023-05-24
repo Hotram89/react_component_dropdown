@@ -1,8 +1,15 @@
 {
   "name": "dropdown_mdournel",
-  "version": "0.1.0",
-  "private": true,
+  "description": "Dropdown React component",
+"author": "Marion DOURNEL",
+"keywords": ["react", "components", "ui"],
+  "version": "0.1.2",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+"files": [ "dist", "README.md" ],
+  "private": false,
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -13,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5"
   }
 }
